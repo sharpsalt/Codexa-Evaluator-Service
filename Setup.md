@@ -25,7 +25,7 @@ Add the following scipts in package.json
     "build": "tsc",
     "start": "node dist/index.js",
     "prestart": "npm run build",
-    "dev": "npx concurrently \"npm run watch\" \"npm start\""
+    "dev": "npx concurrently --kill-others \"npm run watch\" \"npm start\""
   }
 ```
 
